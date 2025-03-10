@@ -235,11 +235,12 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  border-radius: 1rem;
 }
 
-/* .card:hover {
+.card:hover {
   transform: scale(1.05);
-} */
+}
 
 /* Card Image */
 .card img {
