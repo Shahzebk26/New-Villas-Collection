@@ -12,7 +12,12 @@
 
     <!-- Header -->
     <header>
-        <button class="menu-btn" onclick="openSidebar()">☰ </button>
+        <button class="menu-btn" onclick="openSidebar()"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 2.44642C0 1.63314 0.537258 0.973846 1.2 0.973846H22.8C23.4627 0.973846 24 1.63314 24 2.44642C24 3.2597 23.4627 3.91899 22.8 3.91899H1.2C0.537258 3.91899 0 3.2597 0 2.44642ZM0 12.7544C0 11.9411 0.537258 11.2818 1.2 11.2818H22.8C23.4627 11.2818 24 11.9411 24 12.7544C24 13.5677 23.4627 14.227 22.8 14.227H1.2C0.537258 14.227 0 13.5677 0 12.7544ZM0 23.0624C0 22.2491 0.537258 21.5899 1.2 21.5899H22.8C23.4627 21.5899 24 22.2491 24 23.0624C24 23.8757 23.4627 24.535 22.8 24.535H1.2C0.537258 24.535 0 23.8757 0 23.0624Z"
+                fill="#181622" />
+        </svg>
+</button>
 
          <!-- Sidebar Menu -->
     <div id="sidebar" class="sidebar">
@@ -51,7 +56,8 @@ function closeSidebar() {
 
 
 
-        <div class="logo">My Brand</div>
+       
+        <img class="logo" src="premium-villas-high-resolution-logo.png" alt="">
         <!-- <nav>
             <ul class="nav-links">
                 <li><a href="#gallery">Gallery</a></li>
@@ -63,17 +69,24 @@ function closeSidebar() {
 
     <!-- Hero Section with Video -->
     <section class="hero">
-        <video autoplay muted loop>
+        <div class="video-container">
+         </div>
+              <video autoplay muted loop>
             <source src="compressedvideo.mp4" type="video/mp4">
              
             Your browser does not support the video tag.
         </video>
+       
+      
         <div class="hero-content">
             <h1>Elegant Villas For<br>
                 Elevated Lifestyles</h1>
-                <button type="button" class="btn btn-warning btn-lg" data-mdb-ripple-init >Explore Villas <i class="bi bi-arrow-up-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
-                  </svg></i></button>
+                <button type="button" class="btn btn-warning btn-lg mt-3" data-mdb-ripple-init >Explore Villas <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.92768 6.99708L2.27082 12.6539L0.856608 11.2397L6.51346 5.58287L1.56371 0.633123H12.8774V11.9468L7.92768 6.99708Z"
+                        fill="#030E0F" />
+                </svg>
+</button>
 
                   <!-- <button class="menu-btn" onclick="openSidebar()">☰ Menu</button> -->
         </div>
@@ -81,42 +94,40 @@ function closeSidebar() {
 
     <!-- Gallery Section -->
     <section id="gallery-section" class="gallery-section">
-        <h2>Explore Our Villas</h2>
+        <h1>Explore Our Villas</h1>
         <div class="grid">
             <!-- 12 Image Items -->
             <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
-            <img src="1.jpg" alt="Image">
+            <img src="villas.png" alt="Image">
+            <img src="Container (1).png" alt="Image">
+            <img src="Container (2).png" alt="Image">
+            <img src="Container (3).png" alt="Image">
+            <img src="Container (4).png" alt="Image">
+           
         </div>
     </section>
 
     <!-- Villas Section -->
     <section id="villas" class="villas">
-        <h2>Our Exclusive Villa Collection</h2>
-        <div class="grid">
+        <h1>Our Exclusive Villa Collection</h1>
+        <div class="VillaCollectiongrid mt-5 ">
             <!-- 12 Villa Images -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 1">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
-                    <h2>Villa Serenity</h2>
+                    <div class="cardInnerContent">
+                            <h2>Villa Serenity</h2>
                     <p>Location: Malibu</p>
                     <p>⭐ Rating: 4.8</p>
                     <p>Rooms: 5</p>
                     <p>Amenities: Pool, Wi-Fi, Ocean View</p>
+                    </div>
+                
                 </div>
             </div>
              <!-- Card 2 -->
              <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -127,7 +138,7 @@ function closeSidebar() {
             </div>
             <!-- Card 3 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -138,7 +149,7 @@ function closeSidebar() {
             </div>
            <!-- Card 4 -->
            <div class="card">
-            <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
             <div class="overlay">
                 <h2>Villa Paradise</h2>
                 <p>Location: Bali</p>
@@ -149,7 +160,7 @@ function closeSidebar() {
         </div>
             <!-- Card 5 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -160,7 +171,7 @@ function closeSidebar() {
             </div>
             <!-- Card 6 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -171,7 +182,7 @@ function closeSidebar() {
             </div>
            <!-- Card 7 -->
            <div class="card">
-            <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
             <div class="overlay">
                 <h2>Villa Paradise</h2>
                 <p>Location: Bali</p>
@@ -182,7 +193,7 @@ function closeSidebar() {
         </div>
             <!-- Card 8 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -193,7 +204,7 @@ function closeSidebar() {
             </div>
             <!-- Card 9 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -204,7 +215,7 @@ function closeSidebar() {
             </div>
             <!-- Card 10 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -215,7 +226,7 @@ function closeSidebar() {
             </div>
             <!-- Card 11 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -226,7 +237,7 @@ function closeSidebar() {
             </div>
             <!-- Card 12 -->
             <div class="card">
-                <img src="1.jpg" alt="Villa 2">
+                <img src="window.png" alt="Villa 2">
                 <div class="overlay">
                     <h2>Villa Paradise</h2>
                     <p>Location: Bali</p>
@@ -239,17 +250,16 @@ function closeSidebar() {
     </section>
 
     <!-- Footer Starts here -->
-        <footer class="footer">
-            <div class="footer-container-fluid">
-
-
-                <!-- House Find -->
+        <footer class="footer-container-fluid ">
+            <div class="container d-flex justify-content-between footer-columns ">
+                   <!-- House Find -->
                 <div class="footer-column address">
                     <h3>House Find</h3>
                     <p>As HouseBox’s lead negotiator,
                         Chris brings years of experience
                         in securing the best deals both.</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <div class="d-flex  gap-3">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                           </svg>
                           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -261,6 +271,8 @@ function closeSidebar() {
                           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                             <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                           </svg>
+                        </div>
+                     
                 </div>
                
                 
@@ -274,7 +286,7 @@ function closeSidebar() {
                 </div>
 
                  <!-- Quick Links -->
-                <div class="footer-column quick-links">
+                <div class="footer-column quick-links ">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -288,25 +300,30 @@ function closeSidebar() {
                 <!-- Gallery -->
                 <div class="footer-column gallery">
                     <h3>Gallery</h3>
-                    <div>
+                    <div class="gallery-images">
                         <img src="Frame 230.png" alt="Gallery Image">
                         <img src="Frame 230.png" alt="Gallery Image">
                         <img src="Frame 230.png" alt="Gallery Image">
                         <img src="Frame 230.png" alt="Gallery Image">
                         <img src="Frame 230.png" alt="Gallery Image">
                         <img src="Frame 230.png" alt="Gallery Image">
-                        <img src="Frame 230.png" alt="Gallery Image">
-                        <img src="Frame 230.png" alt="Gallery Image">
+                      
                     </div>
                 </div>
             </div>
-    
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <p>&copy; 2025 Your Company. All rights reserved.</p>
-            </div>
-            
+         
+             
+               
+          
+          
+ 
+                    <!-- Footer Bottom -->
+                    
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Your Company. All rights reserved.</p>
+                    </div>
 
+       
 
         </footer>
     

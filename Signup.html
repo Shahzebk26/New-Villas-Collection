@@ -11,42 +11,45 @@
 </head>
 <body>
 
-    <section>
-
-           <!-- Header -->
     <header>
-        <button class="menu-btn" onclick="openSidebar()">☰ </button>
+        <button class="menu-btn" onclick="openSidebar()"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 2.44642C0 1.63314 0.537258 0.973846 1.2 0.973846H22.8C23.4627 0.973846 24 1.63314 24 2.44642C24 3.2597 23.4627 3.91899 22.8 3.91899H1.2C0.537258 3.91899 0 3.2597 0 2.44642ZM0 12.7544C0 11.9411 0.537258 11.2818 1.2 11.2818H22.8C23.4627 11.2818 24 11.9411 24 12.7544C24 13.5677 23.4627 14.227 22.8 14.227H1.2C0.537258 14.227 0 13.5677 0 12.7544ZM0 23.0624C0 22.2491 0.537258 21.5899 1.2 21.5899H22.8C23.4627 21.5899 24 22.2491 24 23.0624C24 23.8757 23.4627 24.535 22.8 24.535H1.2C0.537258 24.535 0 23.8757 0 23.0624Z"
+                    fill="#181622" />
+            </svg>
+        </button>
+    
+        <!-- Sidebar Menu -->
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">❌</a>
+            <a href="index.html">Home</a>
+            <a href="Signup.html">Sign Up</a>
+            <a href="about.html">About Us</a>
+            <a href="clientsection.html">Clients</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="topcollection.html">Collection</a>
+            <a href="contact.html">Contact Us</a>
+    
+    
+        </div>
+    
+        <script src="dumysidebarscript.js">
+            // Open Sidebar
+            function openSidebar() {
+                document.getElementById("sidebar").style.width = "250px";
+            }
 
-         <!-- Sidebar Menu -->
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">❌</a>
-        <a href="index.html">Home</a>
-        <a href="Signup.html">Sign Up</a>
-        <a href="about.html">About Us</a>
-        <a href="clientsection.html">Clients</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="topcollection.html">Collection</a>
-        <a href="contact.html">Contact Us</a>
-        
-        
-    </div>
-
-    <script src="dumysidebarscript.js">
-        // Open Sidebar
-function openSidebar() {
-    document.getElementById("sidebar").style.width = "250px";
-}
-
-// Close Sidebar
-function closeSidebar() {
-    document.getElementById("sidebar").style.width = "0";
-}
+            // Close Sidebar
+            function closeSidebar() {
+                document.getElementById("sidebar").style.width = "0";
+            }
 
 
 
 
 
-    </script>
+        </script>
 
 
 
