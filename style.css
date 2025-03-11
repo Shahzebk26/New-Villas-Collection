@@ -9,7 +9,7 @@
   max-width: 1300px;
   margin-inline: auto;
   padding-inline: 20px;
-  padding-top: 79px; 
+  padding-top: 79px;
 }
 h1 {
   font-size: 56px;
@@ -71,17 +71,17 @@ h6 {
 }
 /* Header */
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 90px 10px 161px;
+  padding: 10px 10px 10px 16px;
   background: rgba(0, 0, 0, 0.7) transparent;
   color: white;
   z-index: 1000;
+    width: 100%;
 }
 
 .logo {
@@ -151,7 +151,7 @@ header {
   width: 100%;
   height: 100%;
   background: #073b3a;
-  z-index: -1;
+  z-index: 1;
 }
 .hero-content {
   position: absolute;
@@ -162,7 +162,12 @@ header {
   color: #fff;
   z-index: 2;
 }
-
+.form-header {
+  font-size: 50px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 .hero-content h1 {
   font-size: 56px;
   font-weight: bold;
@@ -181,7 +186,6 @@ header {
 
 /* Gallery & Villas Sections */
 .villas {
-  
   padding-bottom: 80px;
   text-align: center;
   background: #f2fffd;
@@ -198,30 +202,48 @@ h1 {
   max-width: 527px;
   width: 100%;
   margin: 0 auto;
-  }
+}
 h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 .btn {
-  background: #ff9800;
-  color: white;
+  background: #fcc608;
+  color: #030e0f;
   padding: 12px 24px;
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
   transition: 0.3s;
+  margin-top: 40px;
+  border: none;
 }
 
 .btn:hover {
-  background: #e68900;
+  background: #fcc608;
+  scale: 1.05;
+  color: #030e0f;
 }
 
 /* Image Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
-  gap: 15px;
+  gap: 15px; /* Responsive Design */
+  @media (min-width: 768px) {
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .input-group {
+      flex: 1;
+    }
+  }
   max-width: 1320px;
   margin: auto;
   background: #fdfbfb;
@@ -298,7 +320,9 @@ h2 {
 .card:hover .overlay {
   opacity: 1;
 }
-
+.cardInnerContent {
+  padding: 23px;
+}
 /* Responsive Grid */
 @media (max-width: 768px) {
   .grid {
@@ -431,7 +455,7 @@ body {
 
 /* Overlay Effect */
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -464,7 +488,8 @@ body {
 /* Sidebar Menu */
 .sidebar {
   height: 100%;
-  width: 0;
+  max-width: 310px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -473,10 +498,14 @@ body {
   transition: 0.4s;
   padding-top: 60px;
   padding-inline: 12px;
-  width: 250px;
   transform: translateX(-100%);
 }
-
+.sidebar-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 .sidebar.active {
   transform: translateX(0);
 }
@@ -484,8 +513,9 @@ body {
 .sidebar a {
   padding: 15px 25px;
   text-decoration: none;
-  font-size: 22px;
-  color: rgb(8, 8, 8);
+  font-size: 14px;
+  line-height: 20px;
+  color: #526581;
   display: block;
   transition: 0.3s;
   border-radius: 0.5rem;
@@ -537,14 +567,13 @@ height: 314px; */
 
 .box {
   background: white;
-  padding: 20px;
+  padding: 32px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 300px;
+  max-width: 352px;
+  width: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -570,16 +599,19 @@ height: 314px; */
 }
 
 .supporting-text {
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   margin-bottom: 10px;
+  line-height: 150%;
 }
 
 .reference {
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
+  margin-top: 24px;
+  line-height: 150%;
 }
 
 @media (max-width: 768px) {
@@ -591,4 +623,149 @@ height: 314px; */
 
 .ts-section {
   padding-block: 4rem;
+}
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("your-image.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Form Container */
+.form-container {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 596px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: start;
+}
+
+/* Form Title */
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Align inputs in a row on larger screens */
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Labels */
+.input-group label {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aab1c6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+.input-group input:focus {
+  border-color: #6a8ec7;
+  box-shadow: 0 0 5px rgba(106, 142, 199, 0.5);
+}
+
+
+
+
+/* Input Fields */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aab1c6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #6a8ec7;
+  box-shadow: 0 0 5px rgba(106, 142, 199, 0.5);
+}
+
+/* Submit Button */
+.buttonSubmit {
+  width: 100%;
+  padding: 12px;
+  background: #fcc608;
+  color: #030e0f;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease-in-out,
+    transform 0.2s;
+}
+
+.buttonSubmit:hover {
+  background: #e0b307;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .input-row {
+    flex-wrap: nowrap;
+  }
+
+  .input-group {
+    flex: 1;
+  }
 }
