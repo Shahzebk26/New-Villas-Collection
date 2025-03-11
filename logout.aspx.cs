@@ -13,7 +13,7 @@ namespace project
         {
 
             Session.Abandon();
-            Response.Redirect("homepage.aspx");
+            Response.Redirect("index.aspx");
         }
     }
 }

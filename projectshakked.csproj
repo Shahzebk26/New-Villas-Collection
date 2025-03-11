@@ -70,9 +70,10 @@
     <Content Include="about.aspx" />
     <Content Include="bin\app_data\db_log.ldf" />
     <Content Include="games.aspx" />
-    <Content Include="homePage.aspx" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="HtmlPage2.html" />
+    <Content Include="index.aspx" />
+    <Content Include="about.html" />
+    <Content Include="contact.html" />
+       <Content Include="clientsection.html" />
     <Content Include="images\789.jpeg" />
     <Content Include="images\vilaimg.jpg" />
     <Content Include="images\villa_video.mp4" />
@@ -82,6 +83,41 @@
     <Content Include="signup.aspx" />
     <Content Include="stylemenu.css" />
     <Content Include="Web.config" />
+
+ <!-- Images -->
+    <Content Include="assets\images\1.jpg" />
+    <Content Include="assets\images\Container (1).png" />
+    <Content Include="assets\images\Container (2).png" />
+    <Content Include="assets\images\Container (3).png" />
+    <Content Include="assets\images\Container (4).png" />
+    <Content Include="assets\images\Container (5).png" />
+    <Content Include="assets\images\envelope-black.png" />
+    <Content Include="assets\images\footer-img1.png" />
+    <Content Include="assets\images\footer-img2.png" />
+    <Content Include="assets\images\footer-img3.png" />
+    <Content Include="assets\images\footer-img4.png" />
+    <Content Include="assets\images\footer-img5.png" />
+    <Content Include="assets\images\footer-img6.png" />
+    <Content Include="assets\images\Frame 230.png" />
+    <Content Include="assets\images\location-marker-black.png" />
+    <Content Include="assets\images\phone-black.png" />
+    <Content Include="assets\images\premium-villas-high-resolution-logo.png" />
+    <Content Include="assets\images\villas.png" />
+    <Content Include="assets\images\window.png" />
+
+    <!-- Icons -->
+    <Content Include="assets\icons\close.svg" />
+    <Content Include="assets\icons\envelope-black.svg" />
+    <Content Include="assets\icons\envelope.svg" />
+    <Content Include="assets\icons\facebook.svg" />
+    <Content Include="assets\icons\hamburger.svg" />
+    <Content Include="assets\icons\instagram.svg" />
+    <Content Include="assets\icons\linkedin.svg" />
+    <Content Include="assets\icons\location-marker-black.svg" />
+    <Content Include="assets\icons\location-marker.svg" />
+    <Content Include="assets\icons\phone-black.svg" />
+    <Content Include="assets\icons\phone.svg" />
+    <Content Include="assets\icons\youtube.svg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -98,13 +134,13 @@
     <Compile Include="games.aspx.designer.cs">
       <DependentUpon>games.aspx</DependentUpon>
     </Compile>
-    <Compile Include="homePage.aspx.cs">
-      <DependentUpon>homePage.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="homePage.aspx.designer.cs">
+    <!-- <Compile Include="homePage.aspx.designer.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
-    </Compile>
+    </Compile> -->
     <Compile Include="logout.aspx.cs">
       <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,0 +1,2 @@
+D:\PROJECTS\HTML\villas-collections\New-Villas-Collection\obj\Debug\projectshakked.csproj.AssemblyReference.cache
+D:\PROJECTS\HTML\villas-collections\New-Villas-Collection\obj\Debug\projectshakked.csproj.CoreCompileInputs.cache
