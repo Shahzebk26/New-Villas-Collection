@@ -9,10 +9,10 @@
   max-width: 1300px;
   margin-inline: auto;
   padding-inline: 20px;
+  padding-top: 79px; 
 }
 h1 {
   font-size: 56px;
-
   font-weight: 700;
 }
 h2 {
@@ -181,20 +181,24 @@ header {
 
 /* Gallery & Villas Sections */
 .villas {
+  
   padding-bottom: 80px;
   text-align: center;
   background: #f2fffd;
   height: 100%;
   max-width: 1355px;
   width: 100%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 44px;
   margin-bottom: 20px;
   font-weight: 700;
-}
+  max-width: 527px;
+  width: 100%;
+  margin: 0 auto;
+  }
 h2 {
   font-size: 32px;
   margin-bottom: 20px;
