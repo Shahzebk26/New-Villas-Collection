@@ -519,10 +519,14 @@ body {
   display: block;
   transition: 0.3s;
   border-radius: 0.5rem;
+  font-weight: 600;
+  
 }
 
 .sidebar a:hover {
   background: #fcc608;
+    color: #030E0F;
+
 }
 
 /* About Us Page */
