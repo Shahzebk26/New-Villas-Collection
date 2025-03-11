@@ -644,15 +644,6 @@ body {
   color: rgb(48, 41, 41);
 }
 
-.footer-container-fluid {
-  /* width: 80%;
-  max-width: 1900px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; */
-}
-
 .ts-container {
   max-width: 1600px;
   margin-inline: auto;

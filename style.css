@@ -74,7 +74,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 90px;
+  padding: 10px 90px 10px 161px;
   background: rgba(0, 0, 0, 0.7) transparent;
   color: white;
   z-index: 1000;
@@ -92,10 +92,12 @@ header {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: 18px;
+  right: 29px;
   font-size: 30px;
   border-radius: 50%;
   width: 60px;
@@ -432,7 +434,9 @@ body {
 
 /* Menu Button */
 .menu-btn {
-  padding: 21px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
   border: none;
   background: #fcfafa;
   color: rgb(20, 20, 20);
@@ -442,6 +446,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .menu-btn:hover {
@@ -456,10 +461,16 @@ body {
   top: 0;
   left: 0;
   background: #ffffff;
-
   overflow-x: hidden;
   transition: 0.4s;
   padding-top: 60px;
+  padding-inline: 12px;
+  width: 250px;
+  transform: translateX(-100%);
+}
+
+.sidebar.active {
+  transform: translateX(0);
 }
 
 .sidebar a {
@@ -469,6 +480,7 @@ body {
   color: rgb(8, 8, 8);
   display: block;
   transition: 0.3s;
+  border-radius: 0.5rem;
 }
 
 .sidebar a:hover {
