@@ -65,6 +65,10 @@ h6 {
 .mb-6 {
   margin-bottom: 2rem;
 }
+
+.text-white {
+  color: white;
+}
 /* Header */
 header {
   position: fixed;
@@ -147,7 +151,7 @@ header {
   width: 100%;
   height: 100%;
   background: #073b3a;
-  z-index: 1;
+  z-index: -1;
 }
 .hero-content {
   position: absolute;
@@ -485,4 +489,98 @@ body {
 
 .sidebar a:hover {
   background: #fcc608;
+}
+
+/* About Us Page */
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.ts-contact-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin-block: 3rem;
+}
+
+.addressbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1900px;
+  height: 35vh;
+  /* width: 352.66668701171875px;
+height: 314px; */
+  border-radius: 12px;
+  gap: 24px;
+  padding: 32px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #f0eefc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.supporting-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.reference {
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ts-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
