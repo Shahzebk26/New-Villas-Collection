@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/styles/style.css" />
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <button class="menu-btn" onclick="openSidebar()">
       <img width="24" src="./assets/icons/hamburger.svg" alt="hamburger" />
@@ -40,29 +39,7 @@
             </div>
             Create an account
           </a>
-          <a href="Signup.html" style="display: flex; gap: 20px;">
-            <div>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_83_4)">
-                  <path
-                    d="M18.185 0.0125122C18.1642 0.0108337 18.1467 0 18.125 0H9.16672C7.78839 0 6.66672 1.12167 6.66672 2.5V3.33328C6.66672 3.79333 7.03995 4.16672 7.5 4.16672C7.96005 4.16672 8.33328 3.79333 8.33328 3.33328V2.5C8.33328 2.04086 8.70743 1.66672 9.16672 1.66672H13.0492L12.795 1.75171C12.1201 1.98502 11.6667 2.62085 11.6667 3.33328V15.8333H9.16672C8.70743 15.8333 8.33328 15.4591 8.33328 15V13.3333C8.33328 12.8734 7.96005 12.5 7.5 12.5C7.03995 12.5 6.66672 12.8734 6.66672 13.3333V15C6.66672 16.3783 7.78839 17.5 9.16672 17.5H11.6667V18.3333C11.6667 19.2525 12.4141 20 13.3333 20C13.5117 20 13.6809 19.9742 13.8641 19.9174L18.8708 18.2483C19.5467 18.015 20 17.3792 20 16.6667V1.66672C20 0.695038 19.1624 -0.0666809 18.185 0.0125122Z"
-                    fill="#526581" />
-                  <path
-                    d="M8.92242 7.74413L5.58914 4.41085C5.3508 4.17251 4.99252 4.10079 4.68079 4.23003C4.36996 4.35912 4.16672 4.66338 4.16672 4.99999V7.49999H0.833282C0.373383 7.49999 0 7.87338 0 8.33328C0 8.79333 0.373383 9.16671 0.833282 9.16671H4.16672V11.6667C4.16672 12.0033 4.36996 12.3074 4.68079 12.4367C4.99252 12.5658 5.3508 12.4942 5.58914 12.2559L8.92242 8.92242C9.24835 8.59664 9.24835 8.07006 8.92242 7.74413Z"
-                    fill="#526581" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_83_4">
-                    <rect width="20" height="20" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-  
-  
-            </div>
-  
-            Login
-          </a>
+        
   
         </div>
   
@@ -70,7 +47,7 @@
   
       </div>
     </div>
-    <a href="/"><img class="logo" src="premium-villas-high-resolution-logo.png" alt="" /></a>
+    <a href="/"><img class="logo" src="assets/images/premium-villas-high-resolution-logo.png" alt="" /></a>
   
   
   </header>
@@ -79,7 +56,7 @@
   <section class="hero">
     <div class="video-container"></div>
     <video autoplay muted loop>
-      <source src="compressedvideo.mp4" type="video/mp4" />
+      <source src="/assets/video/compressedvideo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
@@ -88,7 +65,8 @@
         <h2>We’d Love to Hear From You</h2>
       </div>
       <div class="form-container">
-        <form>
+        <form id="contactForm">
+
           <div class="input-group">
             <label for="full-name">Name</label>
             <input type="text" id="full-name" placeholder="Full name" required>
@@ -107,9 +85,36 @@
           <button type="submit" class="buttonSubmit">Submit</button>
         </form>
       </div>
+      <p class="success-message" id="successMessage">Message sent successfully!</p>
+
     </div>
   </section>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const successMessage = document.getElementById("successMessage");
 
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Show success message with animation
+          successMessage.style.display = "block";
+          successMessage.style.opacity = "1";
+
+          // Clear form fields
+          form.reset();
+
+          // Hide message after 3 seconds
+          setTimeout(() => {
+            successMessage.style.opacity = "0";
+            setTimeout(() => {
+              successMessage.style.display = "none";
+            }, 500); // Matches transition duration
+          }, 3000);
+        });
+      });
+
+    </script>
   <script src="./script/app.js"></script>
 
 </body>
